@@ -40,3 +40,10 @@ You will need [Node.js] with [NPM]
 ## Show your support
 
 - Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Hat tip to Microverse
+- React Team
+
+## License
+This project is MIT licensed.
