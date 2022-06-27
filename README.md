@@ -46,4 +46,4 @@ You will need [Node.js] with [NPM]
 - React Team
 
 ## License
-This project is MIT licensed.
+This project is [MIT](./MIT.md) licensed.
