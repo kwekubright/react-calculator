@@ -26,18 +26,18 @@ class Calculator extends React.Component {
             <div className="calculator-keypad-key">4</div>
             <div className="calculator-keypad-key">5</div>
             <div className="calculator-keypad-key">6</div>
-          <div className="calculator-keypad-key bg-orange">-</div>
+            <div className="calculator-keypad-key bg-orange">-</div>
           </div>
           <div className="calculator-keypad-row flex flex-justify-space-between">
             <div className="calculator-keypad-key">1</div>
             <div className="calculator-keypad-key">2</div>
             <div className="calculator-keypad-key">3</div>
-          <div className="calculator-keypad-key bg-orange">+</div>
+            <div className="calculator-keypad-key bg-orange">+</div>
           </div>
           <div className="calculator-keypad-row flex flex-justify-space-between">
             <div className="calculator-keypad-key flex-more">0</div>
             <div className="calculator-keypad-key flex-less">.</div>
-          <div className="calculator-keypad-key bg-orange flex-less">=</div>
+            <div className="calculator-keypad-key bg-orange flex-less">=</div>
           </div>
         </div>
       </div>
