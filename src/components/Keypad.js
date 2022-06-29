@@ -1,37 +1,33 @@
-import React from "react";
-import Proptype from "prop-types";
+/* eslint-disable  react/destructuring-assignment */
+import React from 'react';
+import Proptype from 'prop-types';
 
 class Keypad extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleClick(buttonName) {
     this.props.clickHandler(buttonName);
   }
 
   render() {
-    if (this.props.keypads.length === 4) { 
+    if (this.props.keypads.length === 4) {
       const [first, second, third, fourth] = this.props.keypads;
-      
+
       return (
         <div className="calculator-keypad-row flex flex-justify-space-between">
-          <div className="calculator-keypad-key" onClick={() => this.handleClick(first)}>{first}</div>
-          <div className="calculator-keypad-key" onClick={() => this.handleClick(second)}>{second}</div>
-          <div className="calculator-keypad-key" onClick={() => this.handleClick(third)}>{third}</div>
-          <div className="calculator-keypad-key bg-orange" onClick={() => this.handleClick(fourth)}>{fourth}</div>
+          <button type="button" className="calculator-keypad-key" onClick={() => this.handleClick(first)} onKeyDown={() => this.handleClick(first)}>{first}</button>
+          <button type="button" className="calculator-keypad-key" onClick={() => this.handleClick(second)} onKeyDown={() => this.handleClick(second)}>{second}</button>
+          <button type="button" className="calculator-keypad-key" onClick={() => this.handleClick(third)} onKeyDown={() => this.handleClick(third)}>{third}</button>
+          <button type="button" className="calculator-keypad-key bg-orange" onClick={() => this.handleClick(fourth)} onKeyDown={() => this.handleClick(fourth)}>{fourth}</button>
         </div>
       );
-    } else {
-      const [first, second, third] = this.props.keypads;
-      return (
-      <div className="calculator-keypad-row flex flex-justify-space-between">
-          <div className="calculator-keypad-key flex-more" onClick={() => this.handleClick(first)}>{first}</div>
-          <div className="calculator-keypad-key flex-less" onClick={() => this.handleClick(second)}>{second}</div>
-          <div className="calculator-keypad-key bg-orange flex-less" onClick={() => this.handleClick(third)}>{third}</div>
-      </div>
-      )
     }
+    const [first, second, third] = this.props.keypads;
+    return (
+      <div className="calculator-keypad-row flex flex-justify-space-between">
+        <button type="button" className="calculator-keypad-key flex-more" onClick={() => this.handleClick(first)} onKeyDown={() => this.handleClick(first)}>{first}</button>
+        <button type="button" className="calculator-keypad-key flex-less" onClick={() => this.handleClick(second)} onKeyDown={() => this.handleClick(second)}>{second}</button>
+        <button type="button" className="calculator-keypad-key bg-orange flex-less" onClick={() => this.handleClick(third)} onKeyDown={() => this.handleClick(third)}>{third}</button>
+      </div>
+    );
   }
 }
 

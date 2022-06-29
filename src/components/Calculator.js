@@ -1,4 +1,5 @@
 /* eslint-disable react/prefer-stateless-function */
+/* eslint-disable  react/destructuring-assignment */
 import React from 'react';
 import calculate from '../logics/calculate';
 import Keypad from './Keypad';
@@ -15,7 +16,7 @@ class Calculator extends React.Component {
     };
   }
 
-  componentDidMount() { 
+  componentDidMount() {
     this.handleClick('AC');
   }
 
