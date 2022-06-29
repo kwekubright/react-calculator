@@ -1,44 +1,41 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import calculate from '../logics/calculate';
+import Keypad from './Keypad';
 import './Calculator.css';
 
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+      current: null,
+    };
+  }
+
+  componentDidMount() { 
+    this.handleClick('AC');
+  }
+
+  handleClick(buttonName) {
+    const { total, next, operation } = calculate(this.state, buttonName);
+    this.setState({ total, next, operation });
+  }
+
   render() {
     return (
       <div className="calculator flex flex-column">
         <div className="calculator-display bg-dark">
-          <div className="calculator-display-value">0</div>
+          <div className="calculator-display-value">{(this.state.next == null) ? this.state.total : this.state.next}</div>
         </div>
         <div className="calculator-keypad bg-gray flex flex-column flex-justify-space-between">
-          <div className="calculator-keypad-row flex flex-justify-space-between">
-            <div className="calculator-keypad-key">AC</div>
-            <div className="calculator-keypad-key">+/-</div>
-            <div className="calculator-keypad-key">%</div>
-            <div className="calculator-keypad-key bg-orange">÷</div>
-          </div>
-          <div className="calculator-keypad-row flex flex-justify-space-between">
-            <div className="calculator-keypad-key">7</div>
-            <div className="calculator-keypad-key">8</div>
-            <div className="calculator-keypad-key">9</div>
-            <div className="calculator-keypad-key bg-orange">x</div>
-          </div>
-          <div className="calculator-keypad-row flex flex-justify-space-between">
-            <div className="calculator-keypad-key">4</div>
-            <div className="calculator-keypad-key">5</div>
-            <div className="calculator-keypad-key">6</div>
-            <div className="calculator-keypad-key bg-orange">-</div>
-          </div>
-          <div className="calculator-keypad-row flex flex-justify-space-between">
-            <div className="calculator-keypad-key">1</div>
-            <div className="calculator-keypad-key">2</div>
-            <div className="calculator-keypad-key">3</div>
-            <div className="calculator-keypad-key bg-orange">+</div>
-          </div>
-          <div className="calculator-keypad-row flex flex-justify-space-between">
-            <div className="calculator-keypad-key flex-more">0</div>
-            <div className="calculator-keypad-key flex-less">.</div>
-            <div className="calculator-keypad-key bg-orange flex-less">=</div>
-          </div>
+          <Keypad keypads={['AC', '+/-', '%', '÷']} clickHandler={(buttonName) => this.handleClick(buttonName)} />
+          <Keypad keypads={['7', '8', '9', 'x']} clickHandler={(buttonName) => this.handleClick(buttonName)} />
+          <Keypad keypads={['4', '5', '6', '-']} clickHandler={(buttonName) => this.handleClick(buttonName)} />
+          <Keypad keypads={['1', '2', '3', '+']} clickHandler={(buttonName) => this.handleClick(buttonName)} />
+          <Keypad keypads={['0', '.', '=']} clickHandler={(buttonName) => this.handleClick(buttonName)} />
         </div>
       </div>
     );
