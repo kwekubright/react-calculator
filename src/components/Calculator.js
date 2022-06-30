@@ -1,22 +1,21 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable  react/destructuring-assignment */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import calculate from '../logics/calculate';
 import Keypad from './Keypad';
 import './Calculator.css';
 
-
 const Calculator = () => {
-  let [total, setTotal] = useState(0);
-  let [next, setNext] = useState(null);
-  let [operation, setOperation] = useState(null);
+  const [total, setTotal] = useState(0);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
 
-  const handleClick = (buttonName) => { 
+  const handleClick = (buttonName) => {
     const result = calculate({ total, next, operation }, buttonName);
     setTotal(result.total);
     setNext(result.next);
     setOperation(result.operation);
-  }
+  };
 
   return (
     <div className="calculator flex flex-column">
@@ -32,7 +31,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-
-}
+};
 
 export default Calculator;
