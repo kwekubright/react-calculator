@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexJustifyCenter {
+  justify-content: center;
+}
+
+.flexAlignCenter {
+  align-items: center;
+}
+
+.flexJustifySpaceBetween {
+  justify-content: space-between;
+}
+
+.flexMore {
+  flex: 2;
+}
+
+.flexLess {
+  flex: 1;
+}
+
+.gapZerro {
+  margin: 0;
+}
+
+.gapOne {
+  margin: 0.25rem;
+}
+
+.bgOrange {
+  background-color: #ffa500;
+}
+
+.bgGray {
+  background-color: #f5f5f5;
+}
+
+.bgDark {
+  background-color: #404040;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.appWrapper {
+  min-height: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.par {
+  margin: 0.5rem 0;
+}

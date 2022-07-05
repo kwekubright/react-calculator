@@ -1,0 +1,9 @@
+.quotes {
+  height: 300px;
+  padding: 0 100px;
+}
+
+.quotesPar {
+  font-size: 20px;
+  font-weight: bold;
+}

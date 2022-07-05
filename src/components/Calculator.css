@@ -1,71 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-button {
-  border: 0;
-}
-
-/* Flex */
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-justify-center {
-  justify-content: center;
-}
-
-.flex-align-center {
-  align-items: center;
-}
-
-.flex-justify-space-between {
-  justify-content: space-between;
-}
-
-.flex-more {
-  flex: 2;
-}
-
-.flex-less {
-  flex: 1;
-}
-
-.gap-0 {
-  margin: 0;
-}
-
-.gap-1 {
-  margin: 0.25rem;
-}
-
-.bg-orange {
-  background-color: #ffa500;
-}
-
-.bg-gray {
-  background-color: #f5f5f5;
-}
-
-.bg-dark {
-  background-color: #404040;
-}
-
 .calculator {
   width: 18.75rem;
 }
 
-.calculator-keypad-key {
+.calculatorKeypadKey {
   height: 3.125rem;
   width: 100%;
   font-size: 1.125rem;
@@ -75,11 +12,12 @@ button {
   border-right: 1px solid #e1d8d8;
 }
 
-.calculator-keypad-key:hover {
-  background-color: #e1d8d8;
+.calculatorKeypadKey:hover {
+  background-color: #825096;
+  color: #fff;
 }
 
-.calculator-display {
+.calculatorDisplay {
   height: 3.125rem;
   width: 100%;
   font-size: 1.125rem;
@@ -89,18 +27,18 @@ button {
   padding: 0.25rem;
 }
 
-.calculator-keypad-row {
+.calculatorKeypadRow {
   border-bottom: 1px solid #e0d8d8;
 }
 
-.calculator-keypad-key:first-child {
+.calculatorKeypadKey:first-child {
   border-left: 0;
 }
 
-.calculator-keypad-key:last-child {
+.calculatorKeypadKey:last-child {
   border-right: 0;
 }
 
-.calculator-keypad-row:last-child {
+.calculatorKeypadRow:last-child {
   border-bottom: 0;
 }
