@@ -3,6 +3,9 @@
 ## Description
 This website allows math fans to make simple calculations and read a random math-related quote. It was built with React. It is bootstraped with react
 
+![image](https://user-images.githubusercontent.com/5249414/177379929-00dc1f34-3826-4ac7-9f29-17fedcc13236.png)
+
+
 ### Live Demo
 
 - Coming soon
