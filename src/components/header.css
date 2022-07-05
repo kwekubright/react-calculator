@@ -1,0 +1,15 @@
+header {
+  background-color: #ed7c23;
+  padding: 20px;
+  margin: 2% auto !important;
+  border-radius: 8px;
+}
+
+.logo {
+  color: #fff;
+}
+
+.headerNavLink {
+  color: #fff;
+  font-weight: 800;
+}

@@ -18,11 +18,11 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator flex flex-column">
-      <div className="calculator-display bg-dark">
-        <div className="calculator-display-value">{(next == null) ? total : next}</div>
+    <div className="calculator flex flexColumn">
+      <div className="calculatorDisplay bgDark">
+        <div className="calculatorDisplay-value">{(next == null) ? total : next}</div>
       </div>
-      <div className="calculator-keypad bg-gray flex flex-column flex-justify-space-between">
+      <div className="calculator-keypad bgGray flex flexColumn flex-justify-space-between">
         <Keypad keypads={['AC', '+/-', '%', '÷']} clickHandler={(buttonName) => handleClick(buttonName)} />
         <Keypad keypads={['7', '8', '9', 'x']} clickHandler={(buttonName) => handleClick(buttonName)} />
         <Keypad keypads={['4', '5', '6', '-']} clickHandler={(buttonName) => handleClick(buttonName)} />

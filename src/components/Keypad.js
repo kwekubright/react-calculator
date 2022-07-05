@@ -11,20 +11,20 @@ const Keypad = ({ keypads, clickHandler }) => {
     const [first, second, third, fourth] = keypads;
 
     return (
-      <div className="calculator-keypad-row flex flex-justify-space-between">
-        <button type="button" className="calculator-keypad-key" onClick={() => handleClick(first)} onKeyDown={() => handleClick(first)}>{first}</button>
-        <button type="button" className="calculator-keypad-key" onClick={() => handleClick(second)} onKeyDown={() => handleClick(second)}>{second}</button>
-        <button type="button" className="calculator-keypad-key" onClick={() => handleClick(third)} onKeyDown={() => handleClick(third)}>{third}</button>
-        <button type="button" className="calculator-keypad-key bg-orange" onClick={() => handleClick(fourth)} onKeyDown={() => handleClick(fourth)}>{fourth}</button>
+      <div className="calculatorKeypadRow flex flex-justify-space-between">
+        <button type="button" className="calculatorKeypadKey" onClick={() => handleClick(first)} onKeyDown={() => handleClick(first)}>{first}</button>
+        <button type="button" className="calculatorKeypadKey" onClick={() => handleClick(second)} onKeyDown={() => handleClick(second)}>{second}</button>
+        <button type="button" className="calculatorKeypadKey" onClick={() => handleClick(third)} onKeyDown={() => handleClick(third)}>{third}</button>
+        <button type="button" className="calculatorKeypadKey bgOrange" onClick={() => handleClick(fourth)} onKeyDown={() => handleClick(fourth)}>{fourth}</button>
       </div>
     );
   }
   const [first, second, third] = keypads;
   return (
-    <div className="calculator-keypad-row flex flex-justify-space-between">
-      <button type="button" className="calculator-keypad-key flex-more" onClick={() => handleClick(first)} onKeyDown={() => handleClick(first)}>{first}</button>
-      <button type="button" className="calculator-keypad-key flex-less" onClick={() => handleClick(second)} onKeyDown={() => handleClick(second)}>{second}</button>
-      <button type="button" className="calculator-keypad-key bg-orange flex-less" onClick={() => handleClick(third)} onKeyDown={() => handleClick(third)}>{third}</button>
+    <div className="calculatorKeypadRow flex flex-justify-space-between">
+      <button type="button" className="calculatorKeypadKey flexMore" onClick={() => handleClick(first)} onKeyDown={() => handleClick(first)}>{first}</button>
+      <button type="button" className="calculatorKeypadKey flexLess" onClick={() => handleClick(second)} onKeyDown={() => handleClick(second)}>{second}</button>
+      <button type="button" className="calculatorKeypadKey bgOrange flexLess" onClick={() => handleClick(third)} onKeyDown={() => handleClick(third)}>{third}</button>
     </div>
   );
 };
