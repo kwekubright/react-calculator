@@ -6,6 +6,6 @@ describe("calculate", () => {
   });
 
   test("should return {total: 7, next: null, operation: null} when buttonName is 3+4", () => {
-    expect(calculate({ total: 0, next: null, operation: null }, "3+4")).toEqual({ total: 7, next: null, operation: null });
+    expect(calculate({ total: '3', next: '4', operation: '+' }, "=")).toEqual({ total: '7', next: null, operation: null });
   });
 });
