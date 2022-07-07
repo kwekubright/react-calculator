@@ -5,7 +5,7 @@ import calculate from '../logics/calculate';
 import Keypad from './Keypad';
 import './Calculator.css';
 
-const Calculator = () => {
+function Calculator() {
   const [total, setTotal] = useState(0);
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
@@ -31,6 +31,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Calculator;

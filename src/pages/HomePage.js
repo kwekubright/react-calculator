@@ -1,7 +1,7 @@
 import React from 'react';
 
-const HomePage = () => (
-  <>
+function HomePage() {
+  return (
     <main>
       <section>
         <div className="container">
@@ -30,7 +30,7 @@ const HomePage = () => (
         </div>
       </section>
     </main>
-  </>
-);
+  );
+}
 
 export default HomePage;

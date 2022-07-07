@@ -1,8 +1,8 @@
 import React from 'react';
 import './quotes-page.css';
 
-const QuotesPage = () => (
-  <>
+function QuotesPage() {
+  return (
     <main>
       <section>
         <div className="container flex">
@@ -16,7 +16,7 @@ const QuotesPage = () => (
         </div>
       </section>
     </main>
-  </>
-);
+  );
+}
 
 export default QuotesPage;

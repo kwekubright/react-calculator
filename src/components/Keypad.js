@@ -2,7 +2,7 @@
 import React from 'react';
 import Proptype from 'prop-types';
 
-const Keypad = ({ keypads, clickHandler }) => {
+function Keypad({ keypads, clickHandler }) {
   const handleClick = (buttonName) => {
     clickHandler(buttonName);
   };
@@ -27,7 +27,7 @@ const Keypad = ({ keypads, clickHandler }) => {
       <button type="button" className="calculatorKeypadKey bgOrange flexLess" onClick={() => handleClick(third)} onKeyDown={() => handleClick(third)}>{third}</button>
     </div>
   );
-};
+}
 
 Keypad.propTypes = {
   keypads: Proptype.arrayOf(Proptype.string).isRequired,

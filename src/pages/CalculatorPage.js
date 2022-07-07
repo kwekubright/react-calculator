@@ -4,8 +4,8 @@ import './calculator-page.css';
 
 const mathImage = require('../assets/images/math.webp');
 
-const CalculatorPage = () => (
-  <>
+function CalculatorPage() {
+  return (
     <main>
       <section>
         <div className="container sectionWrapper flex flexJustifySpaceBetween">
@@ -19,7 +19,7 @@ const CalculatorPage = () => (
         </div>
       </section>
     </main>
-  </>
-);
+  );
+}
 
 export default CalculatorPage;
