@@ -10,15 +10,13 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/quotes" element={<QuotesPage />} />
-          <Route path="/calculator" element={<CalculatorPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<App />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quotes" element={<QuotesPage />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
