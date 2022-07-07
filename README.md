@@ -24,12 +24,17 @@ $npm start
 
 You will need [Node.js] with [NPM]
 
-## Author
+## Authors
 
-👤 Bright Kweku Ahiadeke
+👤 Bright Kweku Ahiadeke && Mohammed Elseddik Rebbouh
+
 - GitHub: [@kwekubright](https://github.com/kwekubright)
-- Twitter: [@twitterhandle](https://twitter.com/kwekubright_)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kwekubright)
+- Twitter: [@kwekubright_](https://twitter.com/kwekubright_)
+- LinkedIn: [Bright Ahiadeke](https://linkedin.com/in/kwekubright)
+
+- GitHub: [@githubhandle](https://github.com/MohammedElseddik)
+- Twitter: [@twitterhandle](https://twitter.com/RebbouhElseddik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-elseddik-rebbouh-676500192)
 
 ## 🤝 Contributing
 
