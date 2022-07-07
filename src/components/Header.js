@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./header.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './header.css';
 
 const Header = () => (
   <header className="container header flex flexJustifySpaceBetween flexAlignCenter">
@@ -11,14 +11,14 @@ const Header = () => (
     </div>
     <div className="header-nav flex">
       <Link to="/" className="headerNavLink">
-        {" "}
-        {"Home | "}
+        {' '}
+        {'Home | '}
       </Link>
       <Link to="/calculator" className="headerNavLink">
-        {" Calculator | "}
+        {' Calculator | '}
       </Link>
       <Link to="/quotes" className="headerNavLink">
-        {" Quote"}
+        {' Quote'}
       </Link>
     </div>
   </header>
