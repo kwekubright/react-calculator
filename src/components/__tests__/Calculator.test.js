@@ -13,5 +13,4 @@ describe('Caluclator component test', () => {
     const resultElement = screen.getByText('AC', { exact: false });
     expect(resultElement).toBeInTheDocument();
   });
-  
 });
