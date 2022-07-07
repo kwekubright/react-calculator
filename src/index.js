@@ -10,13 +10,13 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-      <Routes>
-        <Route element={<App />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/quotes" element={<QuotesPage />} />
-          <Route path="/calculator" element={<CalculatorPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<App />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quotes" element={<QuotesPage />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
