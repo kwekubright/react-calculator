@@ -8,7 +8,8 @@ This website allows math fans to make simple calculations and read a random math
 
 ### Live Demo
 
-- Coming soon
+- Netlify: https://tinyurl.com/mr2z3s8h
+- Heroku: https://rcal360.herokuapp.com/
 
 ## Getting Started
 
